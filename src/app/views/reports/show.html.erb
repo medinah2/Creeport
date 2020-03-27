@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accused student:</strong>
+  <%= @report.accused_student %>
+</p>
+
+<p>
+  <strong>Date of event:</strong>
+  <%= @report.date_of_event %>
+</p>
+
+<p>
+  <strong>Detailed description:</strong>
+  <%= @report.detailed_description %>
+</p>
+
+<p>
+  <strong>Date submitted:</strong>
+  <%= @report.date_submitted %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

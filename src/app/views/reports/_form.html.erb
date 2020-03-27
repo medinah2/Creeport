@@ -1,0 +1,44 @@
+<%= form_with(model: report, local: true) do |form| %>
+  <% if report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+        <% report.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field>
+    <%= form.label "report_type", class: 'field-label' %>
+    <div class="controls">
+      <%= form.select(:report_type, options_for_select([ [" ", " "],["1. sexual harassment", "1. sexual harassment"], ["2. sexual assault", "2. sexual assault"], ["3. stalking", "3. stalking"], ["4. dating or domestic violence", "4. dating or domestic violence"], ["5. invasion of privacy/sexual exploitation", "5. invasion of privacy/sexual exploitation"], ["6. gender discrimination", "6. gender discrimination"], ["7. other/unknown", "7. other/unknown"] ] )) %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :accused_student %>
+    <%= form.text_field :accused_student %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_of_event %>
+    <%= form.datetime_select :date_of_event %>
+  </div>
+
+  <div class="field">
+    <%= form.label :detailed_description %>
+    <%= form.text_field :detailed_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_submitted %>
+    <%= form.datetime_select :date_submitted %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

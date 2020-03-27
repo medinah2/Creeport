@@ -1,0 +1,2 @@
+module UserPgeHelper
+end

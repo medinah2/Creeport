@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accused_student: MyString
+  date_of_event: 2020-03-26 19:50:38
+  detailed_description: MyString
+  date_submitted: 2020-03-26 19:50:38
+
+two:
+  accused_student: MyString
+  date_of_event: 2020-03-26 19:50:38
+  detailed_description: MyString
+  date_submitted: 2020-03-26 19:50:38

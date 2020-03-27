@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creeport</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= link_to "create account", new_user_path %>
+    <%= link_to "account info", users_path %>
+    <%= link_to "file a report", new_report_path %>
+    <%= link_to "view all reports", reports_path %>
+
+    <%= yield %>
+
+  </body>
+</html>
