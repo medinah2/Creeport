@@ -1,5 +1,10 @@
 # README
 
+## When pushing new src folder to git the old folder was removed thus previously committed files are not placed in folder.
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
