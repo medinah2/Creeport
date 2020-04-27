@@ -1,29 +1,21 @@
 # README
 
-## When pushing new src folder to git the old folder was removed thus previously committed files are not placed in folder.
 
+* Ruby version: 2.7.0
 
+* psql version 9.2
 
+* located on student1 of 415-server10.hpc.tcnj.edu
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* server link to access once bounded in vm http://csc415-server10.hpc.tcnj.edu:3000/
 
-Things you may want to cover:
+* path on VM: Assignment2/Creeport/src (to access code)
 
-* Ruby version
+* System dependencies - added gems specified on gemfile 
 
-* System dependencies
+* Database creation - initially sql3 but transfered to psql
 
-* Configuration
+* Database initialization - initiallized upon creation and updated 4/25/2020
 
-* Database creation
+* Services (job queues, cache servers, search engines, etc.): create users and verify account through email authentication, file reports, and access reports if you are certified admin privileges.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
