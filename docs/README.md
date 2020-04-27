@@ -36,7 +36,7 @@ User must first create an account and authenticate their email to access the acc
 User email is not passed in show report information, this is most likely an issue when passing information.  
 admins should not be able to create reports, they should only need to view them.
 
-# # Write-up on the open-source maintenance and communication processes for your project. Label the document with your name and the assignment number. 
+## Write-up on the open-source maintenance and communication processes for your project. Label the document with your name and the assignment number. 
 I included the GNU General Public License v3.0 as it maintains the copyright and license implemented and requires users to include state changes and list sources.  This model aims to share and add improvements while maintaining the open-source implementation so that the source code is accessible.  Multiple changes to the source code are allowed but closed source versions of the code can be distributed; it can be distributed but it must remain open source. 
 
 maintenance
@@ -44,7 +44,7 @@ Bugs and issues can be brought up through the issues page on GitHub so that indi
 Future implementations or added functionality can be created as milestones to accomplish on the GitHub page as well.
 communication
 Users can communicate through the issues or milestones page on the github page.  If there are presonal questions regarding the initial setup of the system that I have implemented they are encouraged to contact cr33p0rt@gmail.com and mention [Creeport Issues] in the subject line. 
-## guidelines
+### guidelines
 See the license included in the GitHub for a more detailed outline of specifications that users must adhere to when adding code to the GitHub.
 1. If you wish to edit this source code please contact me at cr33p0rt@gmail.com and highlight what functionalities or issues you wish to implement.
 3.  Add a wiki page to highlight the version that you have implemented and outline its functionalities.  
