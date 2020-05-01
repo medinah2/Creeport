@@ -34,7 +34,6 @@ User must first create an account and authenticate their email to access the acc
 
 ## Known bugs, issues or limitations. 
 User email is not passed in show report information, this is most likely an issue when passing information.  
-admins should not be able to create reports, they should only need to view them.
 
 ## Write-up on the open-source maintenance and communication processes for your project. Label the document with your name and the assignment number. 
 I included the GNU General Public License v3.0 as it maintains the copyright and license implemented and requires users to include state changes and list sources.  This model aims to share and add improvements while maintaining the open-source implementation so that the source code is accessible.  Multiple changes to the source code are allowed but closed source versions of the code can be distributed; it can be distributed but it must remain open source. 
