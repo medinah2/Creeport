@@ -11,24 +11,32 @@
 
   <body>
 
-    <img src = "https://drive.google.com/uc?export=download&id=1p_V-B6Fiu6Z35yVTWFVxjWDI4tseLIKg"vertical-align="middle">
+    <a href= "http://csc415-server10.hpc.tcnj.edu:3000/">
+      <img src = "https://drive.google.com/uc?export=download&id=1p_V-B6Fiu6Z35yVTWFVxjWDI4tseLIKg"vertical-align="middle">
+    </a>
 
     <% if user_signed_in? %>
       <p> Logged in as <strong><%= current_user.email %></strong>.</p>
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li><%= link_to 'Edit profile', edit_user_registration_path %></li> 
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete  %></li> 
 
-      <%= link_to "file a report", new_report_path %>
-      <%= link_to "view all reports", reports_path %>
+          <li><%= link_to "file a report", new_report_path %></li> 
+          <li><%= link_to "view all reports", reports_path %></li>
+        
   <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+      <%= link_to "Sign up", new_user_registration_path  %> |
+      <%= link_to "Login", new_user_session_path  %>
+      </ul>
+
   <% end %>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
+    </div>
 
   </body>
 </html>
