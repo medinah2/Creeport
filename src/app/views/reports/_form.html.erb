@@ -29,8 +29,9 @@
   </div>
 
   <div class="field">
-    <%= form.label :detailed_description %>
-    <%= form.text_field :detailed_description, required: true%>
+    <%= form.label :detailed_description %> 
+    <p> *must be at least 100 characters long.</p>
+    <%= form.text_field :detailed_description, required: true, :class=>"input-xxlarge" %>
   </div>
 
   <div class="field">

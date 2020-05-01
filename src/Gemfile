@@ -64,3 +64,7 @@ gem 'bcrypt' #added for encrypting password
 gem 'devise' #added for email confirmation
 
 gem 'shutup' #added to terminate running background servers in case system crashes
+
+gem 'bootstrap-sass', '~> 2.3.1.0'
+
+gem 'bootstrap-table-rails' 
