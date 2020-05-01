@@ -52,6 +52,7 @@ See the license included in the GitHub for a more detailed outline of specificat
 5. Additionally, the code must be tested extensively to ensure that new implementation does not crash or break the source code available for future versions.  
 6. If any issues or milestones mentioned on the GitHub are fixed within the new implementation, they must be noted as complete or in progress in order to remove them from the page so it is no longer worked on to keep track of changes.  
 7.  please respect others and make sure that all implementations are beneficial to the system and the betterment of the social issue at hand.
+8.  Update the wiki page of prototype number and issues or milestones accomplished to keep a written log
 
 
 
