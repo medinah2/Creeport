@@ -3,6 +3,7 @@
 # this file includes the display elements of filing a report.
 # License  GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007-->
 
+
 <!--This prevents an incomplete form from being submittitted, there are required fields which must be filled-->
 <%= form_with(model: report, local: true) do |form| %>
   <% if report.errors.any? %>
@@ -26,28 +27,32 @@
     </div>
   </div>
 
-
+<!-- This makes the accused student form a text box that is required to be filled out-->
   <div class="field">
     <%= form.label :accused_student %>
     <%= form.text_field :accused_student, required: true%>
   </div>
 
+<!--This creates a date time form so that users can select a specific date and time -->
   <div class="field">
     <%= form.label :date_of_event %>
     <%= form.datetime_select :date_of_event %>
   </div>
 
+<!--This creates a large text box so that users can enter a detailed description.  This field is required and muust be a minimum of 100 characters. -->
   <div class="field">
     <%= form.label :detailed_description %> 
     <p> *must be at least 100 characters long.</p>
     <%= form.text_field :detailed_description, required: true, :class=>"input-xxlarge" %>
   </div>
 
+<!--This creates a date time form so that users can select a specific date and time -->
   <div class="field">
     <%= form.label :date_submitted %>
     <%= form.datetime_select :date_submitted %>
   </div>
 
+<!--This filed allows the form to be submitted when the submit button is clicked--> 
   <div class="actions">
     <%= form.submit %>
   </div>
