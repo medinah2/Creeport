@@ -19,7 +19,25 @@ https://github.com/medinah2/Creeport/
 To install the application from GitHub you must clone the repository
 https://github.com/medinah2/Creeport.git ← HTTPS link
 git@github.com:medinah2/Creeport.git  ← SSH key 
-to use simply enter the src file and bind the server to activate the link.  This was configured on the vm so it would be best to access it through your vm as it will have the necessary ruby version/environment as well as the database needed.  All data in the src folder is needed to run the application.  Once in the src file users should be able to bind a server to bind the server and visit it via the link specified.  Specific steps to navagate through teh application itself are listed below. 
+to use simply enter the src file and bind the server to activate the link.  This was configured on the vm so it would be best to access it through your vm as it will have the necessary ruby version/environment as well as the database needed.  All data in the src folder is needed to run the application.  Once in the src file users should be able to bind a server to bind the server and visit it via the link specified.  Specific steps to navagate through the application itself are listed below. 
+
+   git clone https://github.com/medinah2/Creeport.git
+   
+   cd Creeport/src
+   
+   bundle install
+   
+   yarn install
+   
+   rake db:create
+   
+   rake db:migrate:reset
+   
+   rake db:migrate
+   
+   rake db:seed
+
+
 
 ## If you implemented a web app, specify the full link (copy and paste the url) needed to run your application through a browser. Provide the commands to start the rails server on the VM. Specify the account you used, and the full pathname to your code on the VM. 
 http://csc415-server10.hpc.tcnj.edu:3000/
